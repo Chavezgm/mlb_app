@@ -1,0 +1,8 @@
+<h1><%= @team[:name] %></h1>
+<h2>Roster</h2>
+<ul>
+  <% @roster.each do |player| %>
+    <li><%= player[:person][:fullName] %></li>
+  <% end %>
+</ul>
+<%= link_to 'Back to teams', teams_path %>
